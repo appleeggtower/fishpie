@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .w-25 {
+            width: 20% !important;
+        }
+        .bg-dark {
+            background-image: url('./img/flower1.jpg')!important;
+        }
+        .bg1-img {
+            /* width: 100%; */
+            height: 700px;
+            background-position: center;
+        }
+        .bg-img {
+            /* width: 100%; */
+            height: 700px;
+            background-size: cover;
+            background-position: center;
+        }
+        section#about .col-gold-left h1 {
+            color: rgb(86, 125, 197);
+        }
+        section#about {
+            padding: 60px 0;
+            background-image: url('./img/flower1.jpg');
+        }
+        section#product {
+            padding: 60px 0;
+            background-color: rgba(141, 117, 135, 0.418);
+            background-image: url('./img/flower1.jpg');
+        }
+        section#information {
+            padding: 60px 0;
+            background-image: url('./img/flower.jpg');
+        }
+        /* footer區域 */
+        footer p {
+            padding: 5px 0;
+            margin: 0;
+            color: #fa0e68b2 !important;
+            text-align: center;
+        }
+        footer {
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            border-top: solid 1px #ddc2bd;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: #d5b3ac!important;
+        }
+        .shop{
+           background-image: url('./img/flower.jpg');
+           background-repeat: no-repeat;
+           background-position: center;
+        }
+        
+        /* footer區域 */
+        .fu1 {
+            margin: 25px;
+            padding: 10px;
+            color: rgb(72, 22, 252);
+        }
+        .fu2 {
+            margin: -5.5px;
+            padding: 6.5px;
+            color: rgb(72, 22, 252);
+        }
+        .fu3 {
+            margin: 50px;
+            padding: -9.5px;
+            color: rgb(72, 22, 252);
+        }
+        .fu4{
+            color: rgb(206, 133, 65);
+        }
+        .fu4:hover{
+            color: rgb(126, 114, 49);
+        }
+        .order-2 {
+            -webkit-clip-path: ellipse();
+        }
+       
+         /* section sec-大標題 */
+         .sec-banner{
+            background-image: url('./img/flower.jpg');
+            width: 100%;
+            padding: 9px 0;
+        }
+
+        /* 大標題的下面 */
+        .container1{
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 9px;
+            background-color: #fbf7fca8
+        }
+        
+        #parallax {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(250, 3, 53);
+            background-image: url('./img/flower.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+        /* 光療風格區 */
+     .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    text-align: left;
+    list-style: none;
+    background-color: rgb(233, 145, 145);
+    background-clip: padding-box;
+    border: 1px solid rgba(252, 249, 249, 0.596);
+    border-radius: .25rem;
+    }
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #fbf7fc;
+    text-decoration: none;
+    background-color: #ee8f3786;
+}    
+  /* 光療風格區 */
+        /* 下面是顏色區 */
+        .icebar {
+            background-color: rgba(240, 237, 77, 0.678);
+        }
+
+        .icebtn {
+            background-color: rgba(88, 233, 100, 0.63);
+        }
+        .footer {
+            background-color: rgb(122, 47, 22)
+        }
+        a.nav-link:hover a.nav-link {
+            background-color: brown;
+            transform: scale(1.5);
+        }
+        .nav-item {
+            background-color: rgb(212, 151, 151);
+        }
+        li.nav-item:hover {
+            background-color: rgb(218, 134, 134);
+        }
+        .navbar-dark .navbar-nav .nav-link.disabled {
+            color: rgba(255, 255, 255, 0.877);
+        }
+        
+        .yallo{
+            margin-top: 0;
+            margin-bottom: .5rem;
+            color: rgb(128, 160, 221);
+        }
+        .yallo1{
+        color: rgb(57, 81, 126);
+        }
+
+        .yallo2{
+            margin-top: 0;
+            margin-bottom: .5rem;
+            color: rgb(128, 160, 221);
+        }
+
+         .fish {
+            background-color: rgb(241, 204, 204);
+        }
+
+        
+        .fish1 {
+            background-color: rgb(241, 204, 204);
+        }
+        .fish2{
+            background-color: rgb(241, 204, 204);
+            height: 50%;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="w-25" src="./img2/logo02.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">關於魚排 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">服務方式</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            預約方式/須知
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">凝膠式/指甲油式光療功能</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">凝膠式光療壽命/如何維持</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">凝膠式光療特點</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    光療風格
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">時尚豹紋/格紋</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">簍空設計</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">韓系霧色風格</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">白色蕾絲</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">漸層色凝膠</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">更多款式請洽魚排</a>
+                                    <div class="dropdown-divider"></div>
+                        </div>
+                        
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">服務據點</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- <div class="swiper-slide">
+                    <img src="https://cdn.pixabay.com/photo/2019/09/08/10/41/landscape-4460685_960_720.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://cdn.pixabay.com/photo/2019/09/11/11/39/berlin-4468570_960_720.jpg" alt="">
+                </div> -->
+
+                <div class="swiper-slide bg1-img w-100" style="background-image: url('./img2/big neil.jpg ');">
+                </div>
+
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/bilbil neil2.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/ek6y7 neil.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/ek6y7 neil2.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/ek6y7 neil3.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/ful3dk4xu4 neil.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/love neil.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/onered neil.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/pink neil.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/pink neil2.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/pink y neil.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/pink y neil2.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/pinkstar neil.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/pinkstar neil2.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/pinkstar neil3.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/rabbit neil.jpg');">
+                </div>
+
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/rul3 neil.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/rul3 neil2.jpg');">
+                </div>
+                <div class="swiper-slide bg-img w-100" style="background-image: url('./img2/rul3 neil3.jpg');">
+                </div>
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <section id="parallax">   
+        </section>
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-gold-left order-3 order-lg-1 fish1 ">
+                    <h1>創辦人-魚排
+                    </h1>
+                    <p>提供專業的到府式美甲，致力於讓客戶享受最親切優質的待遇與服務，提供各式素材與作品集，不怕沒想法，適時提供專業建議讓顧客都能找到適合自己的顏色與風格。
+                    </p>
+                </div>
+                <div class="col-gold-right">
+                    <div class="order-2">
+                        <img  src="./img2/paipai.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-gold-left order-3 order-lg-1 fish ">
+                    <h1>參與行動美甲行業原因
+                    </h1>
+                    <p>從小我就特別喜歡畫畫，求學的過程之中也曾想過要走藝術這條路。只是舊有的觀念都普遍認為 : 藝術怎麼能當飯吃呢 ?
+                        因著這個理由，我選擇了自己還算喜歡的觀光美容系，畢業之後尚在找尋出路的我，也四處找尋著適合自己的工作，至於為甚麼現在毅然決然地投入了這個領域呢?我想就是因為當人有很多自由可以做自己想做的事情的時候，不清楚方向或者沒有決心做一件事情，等時間被壓縮後才開始做自己想做的事。毅然決然地報名了美甲教學課程，發現自己其實還蠻有天分的，就這樣，課程畢業之後，慢慢累積自己的作品，也建立了行動工作室，因為嚮往自由的我不喜歡被拘束在一個空間內，所以建立了我就是一個個人工作室的概念，只要是台中市的客人，我都會抵達他們的身邊提供美甲服務，一部分是覺得當今社會的走向，似乎要培養自己的第二專長才能面的這個變換很快的現實社會，畢竟現在的工作可以做多久沒有人知道，也因為我有興趣跟時常精進自己的技術，所以做起來也特別的用心與開心，興趣與理想結合會很辛苦，當美甲融入我的生活之中，我的生活也變得充實了，不論未來多麼辛苦，都會盡心提供最好的服務給大家。
+
+
+                    </p>
+                </div>
+                <div class="col-gold-right">
+                    <div class=" order-2">
+                        <img class="pai" src="./img2/pink y neil.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="parallax">   
+        </section>
+    <section id="product">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4">
+                    <div class="card icebar">
+                        <img src="./img2/red bilbil neil.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">服務方式</h5>
+                            <p class="card-text fu2">手699 足899
+                                前置作業皆包含前置保養、指緣嫩膚、甲面處理、指甲修型、甘皮處理、單色光療等全套服務。
+                                超值必備基礎保養+光療組合
+
+                                +30各式鑽式+造型貼紙可以選擇
+                                +100跳色款 貓眼/皮草/深淺/璀璨 全指隨意跳
+                                +150(以指計算)大理石/法式半月/簡約格紋...
+                                特殊技法or其他手繪設計依實際難度報價，也可以傳自己喜歡的美甲款式圖片給魚排估價。
+
+
+                            </p>
+                            <a href="#" class="btn btn-primary icebtn">更多介紹</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card icebar">
+                        <img src="./img2/red bilbil neil3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">卸甲續做</h5>
+                            <p class="card-text fu1">
+                                本店卸甲續做250，他店卸甲續作350，單卸甲無續做400。
+                                初次來店體驗客，本店續作卸甲一率優惠100喔。
+                                預約請提早3~5天，讓魚排可以確實地幫你留下完整的時間到府服務
+                                台中市區以外會酌收部分車資喔~ </p>
+                            <a href="#" class="btn btn-primary icebtn">更多介紹</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card icebar">
+                        <img src="./img2/blue bilbil neil2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">預約方式/須知</h5>
+                            <p class="card-text fu3">
+                                可以用Line或者fb等方式來做預約唷，
+                                預約請提早3~5天，讓魚排可以確實地幫你留下完整的時間到府服務
+                                台中市區以外會酌收部分車資喔~
+                            </p>
+                            <a href="#" class="btn btn-primary icebtn">更多介紹</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 上面是黃金比例 -->
+    <section id="parallax">   
+        </section>
+    <section class="sec-banner">
+        <div class="container1">
+            <h2 class="yallo">凝膠式/指甲油式光療功能</h2>
+            <h3 class="yallo1">適合人群</h3>
+            <p class="fu4">
+ 長時間做水晶指甲，指甲太薄需要休息養長的人
+
+不喜歡不好行動且太華麗的水晶指甲，卻又想要嘗試美甲的人
+
+使用光療凝膠在真甲上加強硬化與矯正來改善指甲問題
+
+ 它具有保護甲面、美觀的效果，並且可以讓你的指甲稍稍增厚，使它可以順利的留長
+色澤、光澤都可以維持2~4個星期之久
+
+把指甲養長，選擇凝膠式光療最合適。
+    </div> 
+</section>
+   <section class="sec-banner">
+        <div class="container1">
+            <h2 class="yallo">凝膠式光療壽命</h2>
+            <p class="fu4">    
+平均的『完整的』維持度是3~5個禮拜，
+
+光療是碰到去光水，清潔用品，不會掉，
+
+它是維持度佳，但不是真的不會掉。
+
+每個人的生活習慣不同，指甲生長速度不同，而因人而異，
+
+甚至有的人超過五個禮拜回來卸甲，除了生長出來，剩下的完好如初
+
+但是就算是完好如初，指甲差不多一個月，就該卸掉，
+
+洗手，流汗，還有指甲本身的水分一直分泌，悶在理面，會讓指甲有負擔，這時候就算美甲師在製作的過程中，都沒有過度拋磨你的指甲，也會讓指甲變得很軟。
+
+
+</p>
+        </div>
+    </section><section class="sec-banner">
+        <div class="container1">
+            <h2 class="yallo">凝膠式光療特點</h2>
+            <p class="fu4">光療指甲的主要功能之一是針對一些指甲偏軟、喜歡咬甲、指甲易斷的人
+
+            ，使用光療凝膠在真甲上加強硬化與矯正來改善指甲問題。
+            
+            光療凝膠(Gel Nail)又稱凝膠指甲 質地為無色無味的透明黏稠狀
+            
+            ，鋪整在甲面上透過特殊燈光照射後使其硬化 自然卻富有彈性，
+            做在真甲上看起來非常自然且具有光澤感，
+            
+            強化甲面後， 製作完成可在上面自行擦上一般甲油 持久度也會增加喔!
+            </p>
+        </div>
+    </section>
+    <section id="parallax">   
+        </section>
+    <section id="information">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                    <!-- <img class="flower" src="./img/flower5.png" alt=""> -->
+                </div>
+                
+                <div class="col-12 col-md-6 mb-3 fish2">
+                    <h1 class="yallo2">維持時間/卸甲時機</h1>
+                    <p class="fu4">從事美髮行業(長期洗頭碰水)、食品行業(長期清洗碰水碰油煙)、家庭主婦or清潔員(打掃碰
+
+                        水碰清潔劑)、醫護人員(長期碰酒精化學藥劑)
+                        
+                        以上的職業如果要做光療凝膠，維持度多半不會比一般人持久。
+                        
+                        如果可以，在碰水碰油碰化學劑時，盡量配戴手套，防止直接碰觸到甲面。
+                        
+                        習慣用指尖做事(凝膠易敲到缺角)、習慣一直摳指甲、一小時不洗手渾身不對勁、泡溫泉or
+                        
+                        愛泡澡(遇水遇熱)
+                        
+                        做指甲期間盡量別一直泡溫泉或一直洗手；沒事不要一直摳指甲。
+            
+                    </p>
+                </div>
+               
+                <div class="col-12 col-md-6 order-md-2 mb-3 ">
+                    <!-- <img src="http://imgs.aixifan.com/content/2018_09_18/1537290928.gif" alt=""> -->
+                </div>
+                <div class="col-12 col-md-6 order-md-1 mb-3 fish2">
+                    <h1 class="yallo2">兩者差異</h1>
+                    <p class="fu4">
+                        想換顏色時只要用一般去光水即可將顏色卸除 但不會影響到下面那層光療凝膠。
+                        指甲油式光療需要等乾燥，才可以再上第二層，或是進行彩繪，(切記指甲油不能用熱風吹)，但不可塑型、延長。
+                        指甲油式較凝膠式稍薄
+                        製作凝膠式時間約1.5小時~3小時(看造型難易度)
+                        指甲油式光療約40分鐘~1.5小時(看造型難易度)
+                        凝膠可製作延甲(但是建議不要太長如果是可卸式的)
+                        指甲油式光療無法延甲(需搭配水晶或是凝膠延甲)
+                         凝膠維持度3~4週以上
+                         光療指甲油維持度2-3週以下~
+            
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="parallax">   
+        </section>
+    <footer class="footer">
+        <div class="botton"></div><div class="footerSocial"><!-- footerSocial -->
+
+        <p class="fu4">© 2019 魚排行動美甲 , 教學用途如有冒犯請來信通知.</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('section#banner .swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: ' .swiper-button-next',
+                prevEl: ' .swiper-button-prev',
+            },
+            pagination: {
+                el: ' .swiper-pagination',
+            },
+        });
+
+        var swiper = new Swiper('section#rrr .swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: ' .swiper-button-next',
+                prevEl: ' .swiper-button-prev',
+            },
+            pagination: {
+                el: ' .swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>
